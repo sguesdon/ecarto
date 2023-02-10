@@ -1,0 +1,12 @@
+html, body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+div.p-toolbar, div.p-card {
+  border-radius: 0 !important;
+}
+div.p-treeselect {
+  width: 100%;
+}

@@ -1,0 +1,20 @@
+<div class="wrapper">
+  <p-toolbar>
+    <div class="p-toolbar-group-left">
+      <p-treeSelect
+        [(ngModel)]="selectedNodes"
+        [options]="globalNodes"
+        (ngModelChange)="onTreeSelectionChange(selectedNodes)"
+        selectionMode="single"
+        placeholder=""
+      >
+        <ng-template pTemplate="value">{{renderTreeSelection(selectedNodes)}}</ng-template>
+      </p-treeSelect>
+    </div>
+    <div class="p-toolbar-group-right">
+    </div>
+  </p-toolbar>
+  <div class="chart">
+    <app-chart [data]="data" [options]="config"></app-chart>
+  </div>
+</div>
